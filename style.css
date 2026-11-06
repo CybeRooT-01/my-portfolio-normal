@@ -149,11 +149,12 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  height: auto;
+  min-height: 85vh;
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .section-container {
@@ -386,7 +387,8 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  min-height: 50vh;
+  height: auto;
 }
 
 .contact-info-upper-container {
