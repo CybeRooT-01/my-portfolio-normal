@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Birahim</title>
+    <title>Thierno Birahim Gueye | Software Engineer & DevOps</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -13,9 +13,9 @@
       <div class="logo">Birahim Gueye</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -29,65 +29,68 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Compétences</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+
+    <!-- SECTION PROFILE -->
     <section id="profile">
       <div class="section__pic-container">
         <img
           src="./assets/moi.jpg"
-          alt="John Doe profile picture"
+          alt="Photo de profil Thierno Birahim Gueye"
           style="border-radius: 30px"
           draggable="false"
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Birahim Gueye</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
-        <p class="section__text__p2">
-          Clik here to visit my
-          <a style="color: blue;" href="https://birahim.vercel.app/" target="_blank">Terminal</a> portfolio.
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">Thierno Birahim Gueye</h1>
+        <p class="section__text__p2">Software Engineer & DevOps</p>
+        <p class="section__text__p2" style="font-size: 1.15rem; font-weight: 400; max-width: 550px; margin: 0 auto 1.5rem;">
+          Conception d'architectures backend résilientes, déploiement Cloud & Kubernetes et sécurisation de flux transactionnels critiques.
         </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/moncv.pdf')"
           >
-            Download CV
+            Télécharger CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
+            Me contacter
           </button>
         </div>
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
+            alt="Profil LinkedIn"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="window.open('https://linkedin.com/in/thierno-birahim-gueye-989892233', '_blank')"
           />
           <img
             src="./assets/github.png"
-            alt="My Github profile"
+            alt="Profil GitHub"
             class="icon"
-            onclick="location.href='https://github.com/CybeRooT-01/'"
+            onclick="window.open('https://github.com/CybeRooT-01/', '_blank')"
           />
         </div>
       </div>
     </section>
+
+    <!-- SECTION ABOUT -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+      <p class="section__text__p1">En savoir plus</p>
+      <h1 class="title">À Propos de Moi</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
             src="./assets/moi2.jpeg"
-            alt="Profile picture"
+            alt="Photo Thierno Birahim Gueye"
             class="about-pic"
             draggable="false"
           />
@@ -97,48 +100,46 @@
             <div class="details-container">
               <img
                 src="./assets/experience.png"
-                alt="Experience icon"
+                alt="Icône Expérience"
                 class="icon"
               />
-              <h3>Experience</h3>
-              <p>2 years <br />web Development</p>
+              <h3>Expérience</h3>
+              <p>2+ ans de pratique<br />Fintech, DevOps & Backend</p>
             </div>
             <div class="details-container">
               <img
                 src="./assets/education.png"
-                alt="Education icon"
+                alt="Icône Formation"
                 class="icon"
               />
-              <h3>Education</h3>
+              <h3>Formation</h3>
               <p>
-                Master 1 Software Engeenering<br />Université Virtuel du Senegal
+                Master en Ingénierie Logicielle<br />Licence Dev Web & Mobile (Mention Bien)
               </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              🎮 Bonjour, je suis Birahim Gueye. Passionné de DevOps, je
-              construis et automatise des infrastructures fiables et
-              performantes. En dehors du travail, je pratique la musculation
-              avec assiduité pour rester rigoureux et discipliné. Je consacre
-              aussi mon temps libre aux défis de cybersécurité via les CTFs,
-              alliant technique et esprit d’analyse. Par ailleurs, je développe
-              des applications web avec une approche pragmatique et orientée
-              solutions.
+              Ingénieur logiciel et DevOps basé à Dakar, j'interviens sur la conception d'architectures distribuées, l'interconnexion d'APIs transactionnelles et l'automatisation d'infrastructures Cloud. Fort d'une expérience directe en environnement financier chez Orange Finance Mobile Sénégal (Sonatel) et en startup, je combine rigueur d'ingénierie, réactivité et passion pour la haute disponibilité.
+            </p>
+            <p style="margin-top: 1rem;">
+              En dehors de la production, je m'investis dans la musculation et la boxe anglaise pour maintenir une discipline de fer, et je relève des défis de cybersécurité (CTF) pour garder une vision affûtée de la sécurité offensive et défensive.
             </p>
           </div>
         </div>
       </div>
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="Icône Flèche"
         class="icon arrow"
         onclick="location.href='./#experience'"
       />
     </section>
+
+    <!-- SECTION SKILLS / EXPERIENCE -->
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <p class="section__text__p1">Panorama Technique</p>
+      <h1 class="title">Compétences</h1>
 
       <div
         class="experience-details-container"
@@ -149,448 +150,265 @@
           justify-content: center;
         "
       >
-        <!-- Cloud & Orchestration -->
+        <!-- Backend & Langages -->
         <div
           class="details-container"
           style="
-            flex: 1 1 200px;
+            flex: 1 1 280px;
             min-width: 280px;
             border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1rem;
+            border-radius: 12px;
+            padding: 1.25rem;
           "
         >
-          <h2 class="experience-sub-title">Cloud & Orchestration</h2>
+          <h2 class="experience-sub-title">Backend & Langages</h2>
           <div class="article-container">
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
-                <h3>AWS</h3>
-                <p>Intermediate</p>
+                <h3>Java / Spring Boot</h3>
+                <p>Confirmé</p>
               </div>
             </article>
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
-                <h3>Kubernetes</h3>
-                <p>Intermediate</p>
+                <h3>PHP / Laravel</h3>
+                <p>Confirmé</p>
               </div>
             </article>
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>Node.js & TS</h3>
+                <p>Express, AdonisJS, Nest</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>Python & Go</h3>
+                <p>FastAPI, GIN</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- DevOps, Cloud & Conteneurs -->
+        <div
+          class="details-container"
+          style="
+            flex: 1 1 280px;
+            min-width: 280px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 1.25rem;
+          "
+        >
+          <h2 class="experience-sub-title">Cloud & DevOps</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>Docker & Podman</h3>
+                <p>Confirmé</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>Kubernetes & k3s</h3>
+                <p>kubeadm, EKS</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
                 <h3>OpenShift</h3>
-                <p>Intermediate</p>
+                <p>Déploiement & Config</p>
               </div>
             </article>
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
-                <h3>Docker</h3>
-                <p>Experienced</p>
+                <h3>AWS (Cloud)</h3>
+                <p>EC2, S3, EKS, IAM</p>
               </div>
             </article>
           </div>
         </div>
 
-        <!-- Frontend Development -->
+        <!-- CI/CD & IaC -->
         <div
           class="details-container"
           style="
-            flex: 1 1 200px;
+            flex: 1 1 280px;
             min-width: 280px;
             border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1rem;
+            border-radius: 12px;
+            padding: 1.25rem;
           "
         >
-          <h2 class="experience-sub-title">Frontend Development</h2>
+          <h2 class="experience-sub-title">CI/CD & Automatisation</h2>
           <div class="article-container">
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>Jenkins & GitOps</h3>
+                <p>ArgoCD, Pipelines</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>Terraform & Ansible</h3>
+                <p>IaC & Automatisation</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>Linux & Bash</h3>
+                <p>Fedora, Debian, Shell</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>Helm & Registries</h3>
+                <p>Gestion de releases</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- APIs, Messagerie & Protocoles -->
+        <div
+          class="details-container"
+          style="
+            flex: 1 1 280px;
+            min-width: 280px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 1.25rem;
+          "
+        >
+          <h2 class="experience-sub-title">APIs & Intégration</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>APIs REST & OpenAPI</h3>
+                <p>Swagger, Contrats clairs</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>Kafka & RabbitMQ</h3>
+                <p>Architecture événementielle</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>SOAP & SFTP</h3>
+                <p>Flux XML, WSDL</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
+              <div>
+                <h3>Webhooks & HMAC</h3>
+                <p>Idempotence, Retries</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Frontend & Mobile -->
+        <div
+          class="details-container"
+          style="
+            flex: 1 1 280px;
+            min-width: 280px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 1.25rem;
+          "
+        >
+          <h2 class="experience-sub-title">Frontend & Mobile</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
                 <h3>Angular</h3>
-                <p>Experienced</p>
+                <p>Confirmé</p>
               </div>
             </article>
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
-                <h3>HTML & CSS</h3>
-                <p>Experienced</p>
+                <h3>React.js</h3>
+                <p>Intermédiaire / Confirmé</p>
               </div>
             </article>
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
-                <h3>JavaScript</h3>
-                <p>Experienced</p>
+                <h3>React Native</h3>
+                <p>Applications mobiles</p>
               </div>
             </article>
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
-                <h3>TypeScript</h3>
-                <p>Intermediate</p>
+                <h3>Tailwind & HTML/CSS</h3>
+                <p>UI Responsive & Moderne</p>
               </div>
             </article>
           </div>
         </div>
 
-        <!-- Backend Development -->
+        <!-- Données, Sécurité & Observabilité -->
         <div
           class="details-container"
           style="
-            flex: 1 1 200px;
+            flex: 1 1 280px;
             min-width: 280px;
             border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1rem;
+            border-radius: 12px;
+            padding: 1.25rem;
           "
         >
-          <h2 class="experience-sub-title">Backend & Languages</h2>
+          <h2 class="experience-sub-title">Données, Sécurité & MCO</h2>
           <div class="article-container">
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
-                <h3>PHP (Laravel)</h3>
-                <p>Experienced</p>
+                <h3>PostgreSQL & MySQL</h3>
+                <p>Indexation, SQL Avancé</p>
               </div>
             </article>
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
-                <h3>Java & Spring Boot</h3>
-                <p>Experienced</p>
+                <h3>Redis & Cache</h3>
+                <p>Locks & Sessions</p>
               </div>
             </article>
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
-                <h3>Node.js (Express, NestJS, AdonisJS)</h3>
-                <p>Experienced</p>
+                <h3>Keycloak & AD</h3>
+                <p>SSO, OAuth2, JWT</p>
               </div>
             </article>
             <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/checkmark.png" alt="Check" class="icon" />
               <div>
-                <h3>Git & Agile/Scrum</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- DevOps & CI/CD -->
-        <div
-          class="details-container"
-          style="
-            flex: 1 1 200px;
-            min-width: 280px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1rem;
-          "
-        >
-          <h2 class="experience-sub-title">DevOps & CI/CD</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Jenkins</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>GitLab CI</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>ArgoCD (GitOps)</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>kubeadm</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Infrastructure as Code -->
-        <div
-          class="details-container"
-          style="
-            flex: 1 1 200px;
-            min-width: 280px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1rem;
-          "
-        >
-          <h2 class="experience-sub-title">Infrastructure as Code</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Terraform (IaC)</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Ansible (EaC)</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Linux</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Microservices Architecture</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Security & Authentication -->
-        <div
-          class="details-container"
-          style="
-            flex: 1 1 200px;
-            min-width: 280px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1rem;
-          "
-        >
-          <h2 class="experience-sub-title">Security & Authentication</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Trivy</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Keycloak</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Active Directory & OAuth</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>JWT</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Monitoring & Observability -->
-        <div
-          class="details-container"
-          style="
-            flex: 1 1 200px;
-            min-width: 280px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1rem;
-          "
-        >
-          <h2 class="experience-sub-title">Monitoring & Observability</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Prometheus</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Grafana</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Databases & Cache -->
-        <div
-          class="details-container"
-          style="
-            flex: 1 1 200px;
-            min-width: 280px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1rem;
-          "
-        >
-          <h2 class="experience-sub-title">Databases & Cache</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>MySQL</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>MongoDB</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Redis</h3>
-                <p>Intermediate</p>
+                <h3>Prometheus & Grafana</h3>
+                <p>Supervision & Alerting</p>
               </div>
             </article>
           </div>
@@ -599,206 +417,189 @@
 
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="Icône Flèche"
         class="icon arrow"
         onclick="location.href='./#projects'"
         style="cursor: pointer; margin-top: 2rem"
       />
     </section>
 
-    =
+    <!-- SECTION PROJECTS -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <p style="text-align: center">
-        Voici quelques projets professionnels et académiques. D'autres sont
-        disponibles sur mon
-        <a href="https://github.com/CybeRooT-01/" target="_blank">Github</a>.
+      <p class="section__text__p1">Réalisations Concrètes</p>
+      <h1 class="title">Projets</h1>
+      <p style="text-align: center; max-width: 700px; margin: 0.5rem auto 2rem;">
+        Une sélection de réalisations en production, d'infrastructures Cloud déployées et de projets applicatifs. Retrouvez l'ensemble de mes travaux sur
+        <a href="https://github.com/CybeRooT-01/" target="_blank" style="color: blue; text-decoration: underline;">GitHub</a>.
       </p>
 
-      <!-- Projets professionnels -->
-      <h2 style="text-align: center; margin-top: 40px">
-        🚀 Projets professionnels
+      <!-- Projets en Production & Entreprise -->
+      <h2 style="text-align: center; margin-top: 30px">
+        🚀 Projets en Production & Entreprise
       </h2>
       <div class="experience-details-container">
         <div class="about-containers">
-          <!-- Suivi Contrôle Interne -->
+          <!-- FitPass Platform -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/controlIntern.png"
-                alt="Project Pro 1"
+                alt="FitPass Gym SaaS"
                 class="project-img"
                 draggable="false"
               />
             </div>
             <h2 class="experience-sub-title project-title">
-              Suivi Contrôle Interne
+              FitPass SaaS (Mobile & Backend)
             </h2>
             <p>
-              Application professionnelle développée en Laravel et Angular pour
-              le suivi et la gestion des activités de contrôle interne. Côté
-              infrastructure, le déploiement est automatisé avec OpenShift,
-              ArgoCD (GitOps) et Jenkins.
+              Plateforme SaaS de gestion d'abonnements fitness en Afrique. Backend d'API sécurisé (Laravel, Nginx, Traefik, Docker Compose, verrous d'idempotence Redis), application mobile (QR Code check-in, paiements mobiles, notifications WhatsApp automatisées) et landing page Angular.
             </p>
             <div class="btn-container">
-              <!-- Pas de lien public -->
-              <button class="btn btn-color-2 project-btn" disabled>
-                Projet interne (non public)
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://fitpass.tech', '_blank')"
+              >
+                Site Web
               </button>
             </div>
           </div>
 
-          <!-- Gestion Scolaire - AdonisJS -->
+          <!-- OFMS - Contrôle Interne & Saisines -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/controlIntern.png"
+                alt="Plateformes OFMS Sonatel"
+                class="project-img"
+                draggable="false"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Systèmes Critiques OFMS (Sonatel)
+            </h2>
+            <p>
+              Conception et MCO de solutions internes : plateforme monolithique PHP/Laravel pour le traitement immuable des réquisitions judiciaires, et application découplée (Java Spring Boot + Angular) déployée sur Red Hat OpenShift avec Keycloak et fédération Active Directory.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" disabled>
+                Projet interne (Confidentiel)
+              </button>
+            </div>
+          </div>
+
+          <!-- Caly Education Backend -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/ecole.jpeg"
-                alt="Project Pro 2"
+                alt="Backend Caly"
                 class="project-img"
                 draggable="false"
               />
             </div>
             <h2 class="experience-sub-title project-title">
-              Gestion scolaire (Back AdonisJS)
+              Caly Platform (Backend & Streaming)
             </h2>
             <p>
-              Projet de gestion scolaire développé en équipe. J’étais
-              responsable du backend avec AdonisJS. L’application gère les
-              inscriptions, les utilisateurs (élèves, profs), la planification
-              des cours, etc.
+              Conception du backend distribué sous AdonisJS et MySQL avec streaming vidéo optimisé (FFmpeg). Intégration de microservices, authentification sécurisée et déploiement conteneurisé sur cluster AWS Kubernetes.
             </p>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" disabled>
-                Projet interne (non public)
+                Projet d'entreprise
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Projets académiques -->
-      <h2 style="text-align: center; margin-top: 60px">
-        📚 Projets académiques
+      <!-- Infrastructure, Cloud & DevOps -->
+      <h2 style="text-align: center; margin-top: 50px">
+        ☁️ Infrastructure, Cloud & GitOps
       </h2>
       <div class="experience-details-container">
         <div class="about-containers">
-          <!-- School Management -->
+          <!-- Multi-Node AWS Kubernetes Cluster -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/experience.png"
+                alt="Kubernetes Cluster AWS"
+                class="project-img"
+                draggable="false"
+                style="max-width: 90px; margin: 10px auto;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Cluster Kubernetes Multi-Nœuds (AWS)
+            </h2>
+            <p>
+              Provisioning d'infrastructure cloud AWS via Terraform et Ansible : cluster Kubernetes (1 master, 2 workers), cluster Jenkins distribué (master/agent), registre Docker privé sécurisé et synchronisation GitOps avec ArgoCD.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/CybeRooT-01/', '_blank')"
+              >
+                GitHub Infra
+              </button>
+            </div>
+          </div>
+
+          <!-- Microservices UCHK -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/ecole.jpg"
-                alt="Project 1"
+                alt="Microservices Architecture"
                 class="project-img"
                 draggable="false"
               />
             </div>
             <h2 class="experience-sub-title project-title">
-              School Management
+              Architecture Microservices & Zoneless
             </h2>
             <p>
-              Projet académique complet en Laravel, Angular et Flutter. Gestion
-              des cours, présences, annulation, rôle des élèves, profs et
-              surveillants. Voir le GitHub pour plus de détails.
+              Système de gestion académique découpé en microservices indépendants (Identity Service, Academic Service) sous Java Spring Boot, Apache POI / iText et frontend moderne Angular 21 (zoneless, Tailwind CSS).
             </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/CybeRooT-01/Home-Stretch'"
+                onclick="window.open('https://github.com/CybeRooT-01/', '_blank')"
               >
-                Github
+                Code GitHub
               </button>
             </div>
           </div>
 
-          <!-- Boutique Tailleur -->
+          <!-- Tailleur ERP & TMDB -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/business-plan-boutique.webp"
-                alt="Project 2"
+                alt="ERP Atelier Tailleur"
                 class="project-img"
                 draggable="false"
               />
             </div>
             <h2 class="experience-sub-title project-title">
-              Gestion de boutique
+              Gestion d'Atelier (Spring Boot / React)
             </h2>
             <p>
-              Application de gestion pour tailleur (Spring Boot + React).
-              Gestion des articles, calcul des ressources (ex : tissu pour un
-              costume). Voir GitHub pour front et back.
+              ERP complet de confection et gestion d'inventaire : modélisation relationnelle MySQL, API RESTful Spring Boot et interface d'administration sous React avec estimation prédictive des besoins en tissu.
             </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/CybeRooT-01/SpringTailleurBack'"
+                onclick="window.open('https://github.com/CybeRooT-01/SpringTailleurBack', '_blank')"
               >
-                Github Backend
+                Backend
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/CybeRooT-01/Spring-tailleur-front'"
+                onclick="window.open('https://github.com/CybeRooT-01/Spring-tailleur-front', '_blank')"
               >
-                Github Frontend
-              </button>
-            </div>
-          </div>
-
-          <!-- Film Finder -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/film.png"
-                alt="Project 3"
-                class="project-img"
-                draggable="false"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Film Finder</h2>
-            <p>
-              Petite app faite avec JavaScript et l’API TMDB pour chercher des
-              films, filtrer par genre ou langue. Simple mais efficace.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://film-api-one.vercel.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Side Project -->
-      <h2 style="text-align: center; margin-top: 60px">🧪 Side Project</h2>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <!-- GoldHen PS4 Exploit Stabilizer -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/GoldHen.png"
-                alt="Project PS4"
-                class="project-img"
-                draggable="false"
-                style="width: 100px;"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              PS4 Jailbreak Stabilizer
-            </h2>
-            <p>
-              Script conçu pour stabiliser l’exploit GoldHen sur les firmwares
-              PS4 11. Il améliore la fiabilité du déclenchement de l’exploit
-              via Ethernet, en optimisant le comportement réseau et la mémoire
-              de la console. Il permet d’éviter le rechargement
-              de l'exploit en pleine partie, ce qui freez le jeu ou de reboot la ps4 en cas d'echec de l'exploit.
-            </p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" disabled>
-                Code privé (non publié)
+                Frontend
               </button>
             </div>
           </div>
@@ -807,51 +608,66 @@
 
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="Icône Flèche"
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
     </section>
 
+    <!-- SECTION CONTACT -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
+      <p class="section__text__p1">Entrons en contact</p>
+      <h1 class="title">Contactez-Moi</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
             src="./assets/email.png"
-            alt="Email icon"
+            alt="Icône Email"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:birahim267@gmail.com">Birahim267@gmail.com</a></p>
+          <p><a href="mailto:thiergueye01@gmail.com">thiergueye01@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
             src="./assets/linkedin.png"
-            alt="LinkedIn icon"
+            alt="Icône LinkedIn"
             class="icon contact-icon"
           />
           <p>
-            <a href="https://www.linkedin.com/in/birahim-gueye-989892233/"
+            <a href="https://linkedin.com/in/thierno-birahim-gueye-989892233" target="_blank"
               >LinkedIn</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Icône GitHub"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://github.com/CybeRooT-01/" target="_blank"
+              >GitHub</a
             >
           </p>
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Birahim Gueye @CybeRooT. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Thierno Birahim Gueye (@CybeRooT). Tous droits réservés.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
