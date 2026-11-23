@@ -1,674 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
-  
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thierno Birahim Gueye | FullStack developper</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Birahim Gueye</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#experience">Compétences</a></li>
-          <li><a href="#projects">Projets</a></li>
-          <li><a href="#contact">Contact</a></li>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thierno Birahim Gueye (Cyberoot) – Ingénieur Full Stack & DevOps</title>
+<meta name="description" content="Ingénieur Full Stack & DevOps à Dakar. Conception d'applications scalables, architectures Cloud (AWS, Kubernetes, OpenShift) et pipelines CI/CD GitOps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#accueil">Cyberoot</a>
+  <nav aria-label="Navigation principale">
+    <a href="#competences" data-en="Skills">Compétences</a>
+    <a href="#experience" data-en="Experience">Expérience</a>
+    <a href="#certifications" data-en="Certifications">Certifications</a>
+    <a href="#projets" data-en="Projects">Projets</a>
+    <a href="#contact" data-en="Contact">Contact</a>
+  </nav>
+  <button class="theme" id="lang" type="button" aria-label="Changer de langue / Switch language">EN</button>
+  <button class="theme" id="theme" type="button" aria-label="Changer de thème" data-en="Theme">Thème</button>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <p class="where" data-en="Dakar, Senegal · Available for freelance contracts & full-time roles (Remote & On-site)">Dakar, Sénégal · Ouvert aux missions freelance et CDI (Télétravail & Présentiel)</p>
+    <h1>Thierno Birahim Gueye</h1>
+    <p class="lead" data-en="Full Stack & DevOps Engineer. I build scalable web & mobile platforms, robust APIs, and the automated GitOps pipelines that make continuous delivery reliable.">Ingénieur Full Stack & DevOps. Je conçois des plateformes web & mobiles scalables, des APIs robustes et les pipelines GitOps automatisés qui fiabilisent leur mise en production continue.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projets" data-en="Explore projects">Découvrir mes réalisations</a>
+      <a class="btn" href="#contact" data-en="Let's discuss a project">Discuter d'un projet</a>
+    </div>
+
+    <ol class="pipeline" id="pipeline" aria-label="Chaîne de livraison type">
+      <li><b>Code</b><span>Laravel, Spring Boot, AdonisJS, React</span></li>
+      <li><b>Build</b><span data-en="Docker, Containers, Jenkins">Docker, Conteneurs, Jenkins</span></li>
+      <li><b data-en="Quality">Qualité</b><span data-en="Unit tests, Code Review">Tests unitaires, Code Review</span></li>
+      <li><b data-en="Deploy">Déploiement</b><span>ArgoCD, GitOps</span></li>
+      <li><b>Run</b><span>Kubernetes, OpenShift, AWS</span></li>
+    </ol>
+  </section>
+
+  <section id="competences">
+    <h2 data-en="Skills">Compétences</h2>
+    <p class="intro" data-en="Production-proven stack, organised by software and infrastructure layer. Select a layer to see the technical details and real use cases.">Technologies éprouvées en production, structurées par couche d'architecture logicielle et infrastructurelle. Cliquez sur une étape pour consulter le détail technique et les cas d'usage réels.</p>
+    <div class="trace">
+      <ol class="stops" id="stops"><span class="packet" id="packet" aria-hidden="true"></span></ol>
+      <div class="panel" id="panel" aria-live="polite">
+        <h3 id="p-title"></h3>
+        <p id="p-text"></p>
+        <ul class="chips" id="p-chips"></ul>
+      </div>
+    </div>
+    <button class="btn primary send" id="send" type="button" data-en="Simulate request lifecycle">Simuler le flux d'architecture</button>
+  </section>
+
+  <section id="experience">
+    <h2 data-en="Experience">Expérience</h2>
+    <ol class="timeline">
+      <li>
+        <time data-en="Dec 2023 – Apr 2026">Déc. 2023 – Avr. 2026</time>
+        <h3 data-en="Full Stack & DevOps Developer, Orange Finance Mobile Sénégal (Sonatel)">Développeur Full Stack & DevOps, Orange Finance Mobile Sénégal (Sonatel)</h3>
+        <p class="sub" data-en="Orange Money fintech subsidiary, Dakar">Filiale fintech Orange Money, Dakar</p>
+        <ul>
+          <li data-en="Designed and developed a judicial requisition and claims management platform: data modeling under strict integrity constraints, tamper-proof audit trail, and Redis idempotency locks preventing duplicate executions in concurrent transaction processing.">Conception et développement de la plateforme de gestion des réquisitions judiciaires et saisines : modélisation sous fortes contraintes d'intégrité, audit trail infalsifiable et verrous d'idempotence Redis pour éliminer tout risque de doublon lors des traitements concurrents.</li>
+          <li data-en="Delivered a decoupled internal control application: modular Spring Boot REST APIs, Angular admin back-office, and automated delivery on Red Hat OpenShift with Jenkins and ArgoCD (GitOps).">Architecture et déploiement de l'application de contrôle interne : APIs REST Spring Boot modulaires, back-office d'administration Angular et industrialisation des livraisons sur Red Hat OpenShift via Jenkins et ArgoCD (GitOps).</li>
+          <li data-en="Secured administrator access with Keycloak (RBAC, JWT) federated with the corporate Active Directory.">Sécurisation des accès administrateurs avec Keycloak (RBAC, JWT) fédéré sur l'Active Directory de l'entreprise.</li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Birahim Gueye</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Compétences</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+      </li>
+      <li>
+        <time data-en="Nov 2023 – Present">Nov. 2023 – Aujourd'hui</time>
+        <h3 data-en="Full Stack Developer, Caly (startup)">Développeur Full Stack, Caly (startup)</h3>
+        <p class="sub" data-en="Education SaaS startup, used by schools in production, 100% remote">Startup SaaS éducatif, en production et utilisée par des écoles, 100 % remote</p>
+        <ul>
+          <li data-en="Full-stack development of a multi-tenant SaaS platform with AdonisJS: student records, invoicing, teaching-material inventory, and accounting entries.">Développement full-stack d'une plateforme SaaS multi-tenant sous AdonisJS : dossiers académiques, facturation, gestion des inventaires pédagogiques et mouvements comptables.</li>
+          <li data-en="Event-driven architecture with Apache Kafka for asynchronous data propagation, with documented REST APIs (OpenAPI).">Mise en place d'une architecture orientée événements avec Apache Kafka pour la propagation asynchrone des flux de données, complétée par des APIs REST documentées (OpenAPI).</li>
+        </ul>
+      </li>
+      <li>
+        <time data-en="Feb – Jul 2022">Fév. – Juil. 2022</time>
+        <h3 data-en="Full Stack Developer Intern, Webgram">Stagiaire Développeur Full Stack, Webgram</h3>
+        <p class="sub" data-en="Software engineering company, Dakar">Société d'ingénierie logicielle, Dakar</p>
+        <ul>
+          <li data-en="Built an HR payroll module (Spring Boot, Angular): salary calculation rules, tax deductions and social contributions, with automated payslip generation.">Conception et développement d'un module de paie et gestion RH (Spring Boot, Angular) : moteurs de calcul des salaires, déductions fiscales et cotisations sociales, avec génération automatisée des fiches de paie.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
 
-    <!-- SECTION PROFILE -->
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          src="./assets/moi.jpg"
-          alt="Photo de profil Thierno Birahim Gueye"
-          style="border-radius: 30px"
-          draggable="false"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Bonjour, je suis</p>
-        <h1 class="title">Thierno Birahim Gueye</h1>
-        <p class="section__text__p2">Fullstack Developer</p>
-        <p class="section__text__p2" style="font-size: 1.15rem; font-weight: 400; max-width: 550px; margin: 0 auto 1.5rem;">
-          Conception d'architectures backend résilientes, déploiement Cloud & Kubernetes et sécurisation de flux transactionnels critiques.
-        </p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/moncv.pdf')"
-          >
-            Télécharger CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Me contacter
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="Profil LinkedIn"
-            class="icon"
-            onclick="window.open('https://linkedin.com/in/thierno-birahim-gueye-989892233', '_blank')"
-          />
-          <img
-            src="./assets/github.png"
-            alt="Profil GitHub"
-            class="icon"
-            onclick="window.open('https://github.com/CybeRooT-01/', '_blank')"
-          />
-        </div>
-      </div>
-    </section>
+  <section id="certifications">
+    <h2 data-en="Certifications">Certifications</h2>
+    <p class="intro" data-en="Certifications in secure data exchange and system interoperability. Certificates are available for download.">Certifications en sécurité des échanges de données et interopérabilité des systèmes. Les certificats sont téléchargeables.</p>
+    <ul class="projects">
+      <li>
+        <div class="p-head"><h3>X-Road Fundamentals</h3></div>
+        <p data-en="X-Road standards for secure interoperability between public and private institutions: distributed architecture, central server and security servers, trust model, message integrity through signing and certified timestamping.">Standards X-Road pour l'interopérabilité sécurisée entre institutions publiques et privées : architecture distribuée, serveur central et serveurs de sécurité, modèle de confiance, intégrité des échanges par signature et horodatage certifié.</p>
+        <a class="dl" href="certs/xroad-fundamentals.pdf" download data-en="Download certificate (PDF)">Télécharger le certificat (PDF)</a>
+      </li>
+      <li>
+        <div class="p-head"><h3>X-Road Service Developer</h3><a href="https://github.com/CybeRooT-01/x-road-learning" target="_blank" rel="noopener" data-en="Associated lab">Laboratoire associé</a></div>
+        <p data-en="Design, publication and consumption of secure REST services over X-Road with mutual TLS (mTLS) and certified exchanges. Deployed and tested in a complete Docker lab.">Conception, publication et consommation de services REST sécurisés via X-Road avec authentification mutuelle mTLS et échanges certifiés. Déploiement et tests sur un banc d'essai complet sous Docker.</p>
+        <a class="dl" href="certs/xroad-service-developer.pdf" download data-en="Download certificate (PDF)">Télécharger le certificat (PDF)</a>
+      </li>
+    </ul>
+  </section>
 
-    <!-- SECTION ABOUT -->
-    <section id="about">
-      <p class="section__text__p1">En savoir plus</p>
-      <h1 class="title">À Propos de Moi</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/moi2.jpeg"
-            alt="Photo Thierno Birahim Gueye"
-            class="about-pic"
-            draggable="false"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Icône Expérience"
-                class="icon"
-              />
-              <h3>Expérience</h3>
-              <p>2+ ans de pratique<br />Fintech, DevOps & Backend</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Icône Formation"
-                class="icon"
-              />
-              <h3>Formation</h3>
-              <p>
-                Master en Ingénierie Logicielle<br />Licence Dev Web & Mobile (Mention Bien)
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Ingénieur logiciel et DevOps basé à Dakar, j'interviens sur la conception d'architectures distribuées, l'interconnexion d'APIs transactionnelles et l'automatisation d'infrastructures Cloud. Fort d'une expérience directe en environnement financier chez Orange Finance Mobile Sénégal (Sonatel) et en startup, je combine rigueur d'ingénierie, réactivité et passion pour la haute disponibilité.
-            </p>
-            <p style="margin-top: 1rem;">
-              En dehors de la production, je m'investis dans la musculation et la boxe anglaise pour maintenir une discipline de fer, et je relève des défis de cybersécurité (CTF) pour garder une vision affûtée de la sécurité offensive et défensive.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Icône Flèche"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
+  <section id="projets">
+    <h2 data-en="Projects">Projets</h2>
+    <div class="filters" role="group" aria-label="Filtrer les projets">
+      <button class="chip on" data-f="all" type="button" data-en="All">Tous</button>
+      <button class="chip" data-f="produit" type="button" data-en="Product">Produit</button>
+      <button class="chip" data-f="infra" type="button">Infra</button>
+      <button class="chip" data-f="systeme" type="button" data-en="Systems">Systèmes</button>
+      <button class="chip" data-f="ia" type="button" data-en="AI">IA</button>
+    </div>
 
-    <!-- SECTION SKILLS / EXPERIENCE -->
-    <section id="experience">
-      <p class="section__text__p1">Panorama Technique</p>
-      <h1 class="title">Compétences</h1>
+    <ul class="projects" id="projects">
+      <li data-cat="produit">
+        <div class="p-head"><h3 data-en="FitPass · Gym management SaaS & mobile app">FitPass · SaaS & application mobile pour salles de sport</h3><a href="https://fitpass.tech" target="_blank" rel="noopener">fitpass.tech</a></div>
+        <p data-en="Gym management platform in production: React Native mobile app for members, management dashboard for club owners (subscriptions, cash flow, alerts), and real-time access control with dynamic QR codes. A Node.js microservice distributes access codes asynchronously.">Plateforme de gestion de salles de sport en exploitation : application mobile adhérents (React Native), tableau de bord pour les gérants (abonnements, trésorerie, alertes) et contrôle d'accès en temps réel par QR Code dynamique. Un microservice Node.js distribue les codes d'accès de façon asynchrone.</p>
+        <p class="stack">React Native · React · Laravel · Node.js · Docker · Traefik</p>
+      </li>
+      <li data-cat="infra">
+        <div class="p-head"><h3 data-en="AWS EKS & GitOps pipeline">AWS EKS & pipeline GitOps</h3><a href="https://lnkd.in/p/dd9-nYWR" target="_blank" rel="noopener" data-en="Documentation">Documentation</a></div>
+        <p data-en="Reproducible AWS infrastructure provisioned with Terraform and Ansible (VPC, subnets, NAT gateways, Security Groups, EKS cluster). Continuous GitOps delivery with Jenkins and ArgoCD, keeping staging and production strictly identical.">Infrastructure AWS reproductible orchestrée avec Terraform et Ansible (VPC, sous-réseaux, passerelles NAT, Security Groups, cluster EKS). Déploiement continu GitOps avec Jenkins et ArgoCD garantissant une parité totale entre staging et production.</p>
+        <p class="stack">Terraform · Ansible · AWS EKS · Jenkins · ArgoCD · Docker</p>
+      </li>
+      <li data-cat="systeme">
+        <div class="p-head"><h3 data-en="Fault-tolerant P2P distributed system">Système distribué P2P tolérant aux pannes</h3><a href="https://github.com/CybeRooT-01/p2p" target="_blank" rel="noopener">GitHub</a></div>
+        <p data-en="Decentralised peer-to-peer data replication network with no single point of failure. Consensus algorithms and automatic replication keep data consistent and the service running when a node fails.">Réseau décentralisé pair-à-pair de réplication de données sans point individuel de défaillance. Algorithmes de consensus et réplication automatique pour assurer la cohérence des données et la continuité du service en cas de panne d'un nœud.</p>
+        <p class="stack">Java · Spring Boot · Consensus · Réplication distribuée</p>
+      </li>
+      <li data-cat="systeme infra">
+        <div class="p-head"><h3 data-en="Secure X-Road interoperability platform">Plateforme d'interopérabilité sécurisée X-Road</h3><a href="https://github.com/CybeRooT-01/x-road-learning" target="_blank" rel="noopener">GitHub</a></div>
+        <p data-en="Complete containerised lab emulating an inter-company exchange ecosystem: certificate authority (PKI), central server and security servers. REST services protected by mutual TLS, cryptographic signing and certified timestamping.">Laboratoire complet sous conteneurs émulant un écosystème d'échange inter-entreprises : autorité de certification (PKI), serveur central et serveurs de sécurité. Services REST protégés par mTLS, signature cryptographique et horodatage certifié.</p>
+        <p class="stack">Docker · X-Road · PKI · mTLS</p>
+      </li>
+      <li data-cat="ia">
+        <div class="p-head"><h3 data-en="Structured AI extraction pipeline">Pipeline d'extraction d'IA structurée</h3></div>
+        <p data-en="Back-end pipelines that convert unstructured documents into data matching strict relational schemas. Function calling and JSON Schema enforce a deterministic integration with application tables.">Pipelines back-end qui convertissent des documents non structurés en enregistrements conformes à des schémas relationnels stricts. Function calling et JSON Schema pour une intégration déterministe avec les tables applicatives.</p>
+        <p class="stack">Python · LLM (OpenAI / Claude) · Function Calling · JSON Schema</p>
+      </li>
+    </ul>
+  </section>
 
-      <div
-        class="experience-details-container"
-        style="
-          display: flex;
-          gap: 2rem;
-          flex-wrap: wrap;
-          justify-content: center;
-        "
-      >
-        <!-- Backend & Langages -->
-        <div
-          class="details-container"
-          style="
-            flex: 1 1 280px;
-            min-width: 280px;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 1.25rem;
-          "
-        >
-          <h2 class="experience-sub-title">Backend & Langages</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Java / Spring Boot</h3>
-                <p>Confirmé</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>PHP / Laravel</h3>
-                <p>Confirmé</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Node.js & TS</h3>
-                <p>Express, AdonisJS, Nest</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Python & Go</h3>
-                <p>FastAPI, GIN</p>
-              </div>
-            </article>
-          </div>
-        </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="intro" data-en="Have a project to build, a platform to scale, or a Cloud/DevOps infrastructure to automate? Let's talk.">Vous avez un projet à développer, une plateforme à faire évoluer ou une infrastructure Cloud / DevOps à automatiser ? Échangeons sur vos besoins.</p>
+    <ul class="links">
+      <li><a href="mailto:thiergueye01@gmail.com">thiergueye01@gmail.com</a></li>
+      <li><a href="https://github.com/CybeRooT-01" target="_blank" rel="noopener">github.com/CybeRooT-01</a></li>
+    </ul>
+  </section>
+</main>
 
-        <!-- DevOps, Cloud & Conteneurs -->
-        <div
-          class="details-container"
-          style="
-            flex: 1 1 280px;
-            min-width: 280px;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 1.25rem;
-          "
-        >
-          <h2 class="experience-sub-title">Cloud & DevOps</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Docker & Podman</h3>
-                <p>Confirmé</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Kubernetes & k3s</h3>
-                <p>kubeadm, EKS</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>OpenShift</h3>
-                <p>Déploiement & Config</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>AWS (Cloud)</h3>
-                <p>EC2, S3, EKS, IAM</p>
-              </div>
-            </article>
-          </div>
-        </div>
+<footer>
+  <p>© <span id="year"></span> Thierno Birahim Gueye. <span data-en="Rufisque, Dakar, Senegal.">Rufisque, Dakar, Sénégal.</span></p>
+</footer>
 
-        <!-- CI/CD & IaC -->
-        <div
-          class="details-container"
-          style="
-            flex: 1 1 280px;
-            min-width: 280px;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 1.25rem;
-          "
-        >
-          <h2 class="experience-sub-title">CI/CD & Automatisation</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Jenkins & GitOps</h3>
-                <p>ArgoCD, Pipelines</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Terraform & Ansible</h3>
-                <p>IaC & Automatisation</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Linux & Bash</h3>
-                <p>Fedora, Debian, Shell</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Helm & Registries</h3>
-                <p>Gestion de releases</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- APIs, Messagerie & Protocoles -->
-        <div
-          class="details-container"
-          style="
-            flex: 1 1 280px;
-            min-width: 280px;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 1.25rem;
-          "
-        >
-          <h2 class="experience-sub-title">APIs & Intégration</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>APIs REST & OpenAPI</h3>
-                <p>Swagger, Contrats clairs</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Kafka & RabbitMQ</h3>
-                <p>Architecture événementielle</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>SOAP & SFTP</h3>
-                <p>Flux XML, WSDL</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Webhooks & HMAC</h3>
-                <p>Idempotence, Retries</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Frontend & Mobile -->
-        <div
-          class="details-container"
-          style="
-            flex: 1 1 280px;
-            min-width: 280px;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 1.25rem;
-          "
-        >
-          <h2 class="experience-sub-title">Frontend & Mobile</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Angular</h3>
-                <p>Confirmé</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>React.js</h3>
-                <p>Intermédiaire / Confirmé</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>React Native</h3>
-                <p>Applications mobiles</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Tailwind & HTML/CSS</h3>
-                <p>UI Responsive & Moderne</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Données, Sécurité & Observabilité -->
-        <div
-          class="details-container"
-          style="
-            flex: 1 1 280px;
-            min-width: 280px;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 1.25rem;
-          "
-        >
-          <h2 class="experience-sub-title">Données, Sécurité & MCO</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>PostgreSQL & MySQL</h3>
-                <p>Indexation, SQL Avancé</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Redis & Cache</h3>
-                <p>Locks & Sessions</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Keycloak & AD</h3>
-                <p>SSO, OAuth2, JWT</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Check" class="icon" />
-              <div>
-                <h3>Prometheus & Grafana</h3>
-                <p>Supervision & Alerting</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="./assets/arrow.png"
-        alt="Icône Flèche"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-        style="cursor: pointer; margin-top: 2rem"
-      />
-    </section>
-
-    <!-- SECTION PROJECTS -->
-    <section id="projects">
-      <p class="section__text__p1">Réalisations Concrètes</p>
-      <h1 class="title">Projets</h1>
-      <p style="text-align: center; max-width: 700px; margin: 0.5rem auto 2rem;">
-        Une sélection de réalisations en production, d'infrastructures Cloud déployées et de projets applicatifs. Retrouvez l'ensemble de mes travaux sur
-        <a href="https://github.com/CybeRooT-01/" target="_blank" style="color: blue; text-decoration: underline;">GitHub</a>.
-      </p>
-
-      <!-- Projets en Production & Entreprise -->
-      <h2 style="text-align: center; margin-top: 30px">
-        🚀 Projets en Production & Entreprise
-      </h2>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <!-- FitPass Platform -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/controlIntern.png"
-                alt="FitPass Gym SaaS"
-                class="project-img"
-                draggable="false"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              FitPass SaaS (Mobile & Backend)
-            </h2>
-            <p>
-              Plateforme SaaS de gestion d'abonnements fitness en Afrique. Backend d'API sécurisé (Laravel, Nginx, Traefik, Docker Compose, verrous d'idempotence Redis), application mobile (QR Code check-in, paiements mobiles, notifications WhatsApp automatisées) et landing page Angular.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://fitpass.tech', '_blank')"
-              >
-                Site Web
-              </button>
-            </div>
-          </div>
-
-          <!-- OFMS - Contrôle Interne & Saisines -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/controlIntern.png"
-                alt="Plateformes OFMS Sonatel"
-                class="project-img"
-                draggable="false"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Systèmes Critiques OFMS (Sonatel)
-            </h2>
-            <p>
-              Conception et MCO de solutions internes : plateforme monolithique PHP/Laravel pour le traitement immuable des réquisitions judiciaires, et application découplée (Java Spring Boot + Angular) déployée sur Red Hat OpenShift avec Keycloak et fédération Active Directory.
-            </p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" disabled>
-                Projet interne (Confidentiel)
-              </button>
-            </div>
-          </div>
-
-          <!-- Caly Education Backend -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/ecole.jpeg"
-                alt="Backend Caly"
-                class="project-img"
-                draggable="false"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Caly Platform (Backend & Streaming)
-            </h2>
-            <p>
-              Conception du backend distribué sous AdonisJS et MySQL avec streaming vidéo optimisé (FFmpeg). Intégration de microservices, authentification sécurisée et déploiement conteneurisé sur cluster AWS Kubernetes.
-            </p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" disabled>
-                Projet d'entreprise
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Infrastructure, Cloud & DevOps -->
-      <h2 style="text-align: center; margin-top: 50px">
-        ☁️ Infrastructure, Cloud & GitOps
-      </h2>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <!-- Multi-Node AWS Kubernetes Cluster -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/experience.png"
-                alt="Kubernetes Cluster AWS"
-                class="project-img"
-                draggable="false"
-                style="max-width: 90px; margin: 10px auto;"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Cluster Kubernetes Multi-Nœuds (AWS)
-            </h2>
-            <p>
-              Provisioning d'infrastructure cloud AWS via Terraform et Ansible : cluster Kubernetes (1 master, 2 workers), cluster Jenkins distribué (master/agent), registre Docker privé sécurisé et synchronisation GitOps avec ArgoCD.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/CybeRooT-01/', '_blank')"
-              >
-                GitHub Infra
-              </button>
-            </div>
-          </div>
-
-          <!-- Microservices UCHK -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/ecole.jpg"
-                alt="Microservices Architecture"
-                class="project-img"
-                draggable="false"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Architecture Microservices & Zoneless
-            </h2>
-            <p>
-              Système de gestion académique découpé en microservices indépendants (Identity Service, Academic Service) sous Java Spring Boot, Apache POI / iText et frontend moderne Angular 21 (zoneless, Tailwind CSS).
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/CybeRooT-01/', '_blank')"
-              >
-                Code GitHub
-              </button>
-            </div>
-          </div>
-
-          <!-- Tailleur ERP & TMDB -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/business-plan-boutique.webp"
-                alt="ERP Atelier Tailleur"
-                class="project-img"
-                draggable="false"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Gestion d'Atelier (Spring Boot / React)
-            </h2>
-            <p>
-              ERP complet de confection et gestion d'inventaire : modélisation relationnelle MySQL, API RESTful Spring Boot et interface d'administration sous React avec estimation prédictive des besoins en tissu.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/CybeRooT-01/SpringTailleurBack', '_blank')"
-              >
-                Backend
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/CybeRooT-01/Spring-tailleur-front', '_blank')"
-              >
-                Frontend
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="./assets/arrow.png"
-        alt="Icône Flèche"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-
-    <!-- SECTION CONTACT -->
-    <section id="contact">
-      <p class="section__text__p1">Entrons en contact</p>
-      <h1 class="title">Contactez-Moi</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Icône Email"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:thiergueye01@gmail.com">thiergueye01@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="Icône LinkedIn"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://linkedin.com/in/thierno-birahim-gueye-989892233" target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/github.png"
-            alt="Icône GitHub"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://github.com/CybeRooT-01/" target="_blank"
-              >GitHub</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#experience">Compétences</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2026 Thierno Birahim Gueye (@CybeRooT). Tous droits réservés.</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>
